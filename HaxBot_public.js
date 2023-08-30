@@ -2,16 +2,14 @@
 
 /* ROOM */
 
-const roomName = 'Public Room';
+const roomName = 'Amatorium Türk';
 const maxPlayers = 12;
 const roomPublic = true;
 const token = ""; // Insert token here
 
-var roomWebhook = ''; // this webhook is used to send the details of the room (chat, join, leave) ; it should be in a private discord channel
-var gameWebhook = ''; // this webhook is used to send the summary of the games ; it should be in a public discord channel
 var fetchRecordingVariable = true;
-var timeLimit = 3;
-var scoreLimit = 3;
+var timeLimit = 10;
+var scoreLimit = 10;
 
 var gameConfig = {
     roomName: roomName,
@@ -32,8 +30,8 @@ const bigMap = '{"name":"Big","width":600,"height":270,"spawnDistance":350,"bg":
 var currentStadium = 'training';
 var bigMapObj = JSON.parse(trainingMap);
 
-room.setScoreLimit(scoreLimit);
-room.setTimeLimit(timeLimit);
+room.setScoreLimit(10);
+room.setTimeLimit(10);
 room.setTeamsLock(true);
 room.setKickRateLimit(6, 0, 0);
 
@@ -43,8 +41,8 @@ var roomPassword = '';
 /* OPTIONS */
 
 var drawTimeLimit = Infinity;
-var teamSize = 4;
-var maxAdmins = 0;
+var teamSize = 5;
+var maxAdmins = 2;
 var disableBans = false;
 var debugMode = false;
 var afkLimit = debugMode ? Infinity : 12;
