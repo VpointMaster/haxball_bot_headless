@@ -10,8 +10,8 @@ const token = ""; // Insert token here
 var roomWebhook = ''; // this webhook is used to send the details of the room (chat, join, leave) ; it should be in a private discord channel
 var gameWebhook = ''; // this webhook is used to send the summary of the games ; it should be in a public discord channel
 var fetchRecordingVariable = true;
-var timeLimit = 3;
-var scoreLimit = 3;
+var timeLimit = 10;
+var scoreLimit = 10;
 
 var gameConfig = {
     roomName: roomName,
